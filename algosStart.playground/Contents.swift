@@ -10,9 +10,8 @@ import UIKit
  
  - A String is a series of Characters
  - Predefined string values are called String Literals
- - A String is a value type so it is unique copy when passed (and so does not point back to its origin) 
+ - A String is a value type so it is unique copy when passed (and so does not point back to its origin)
  - A string does not conform to type sequence or protocol sequence (and so cannot be interated over in its regular state)
-
  
  */
 
@@ -31,7 +30,7 @@ var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m",
 let arrBackToStr = String(strToArr) // "Programming"
 
 
-// Modify: styl
+// Modify: style
 
 let strUppercased = newStr.uppercased() // "PROGRAMMING SWIFT"
 let strLowercased = newStr.lowercased() // "programming swift"
