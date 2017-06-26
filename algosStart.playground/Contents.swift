@@ -25,6 +25,7 @@ var str = "Programming"
 
 let newStr = str + " swift" // "Programming swift"
 let newerStr = str.appending(" fun")
+let insertStr = str
 
 var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
 let arrBackToStr = String(strToArr) // "Programming"
@@ -51,10 +52,13 @@ let strContains = str.contains("gram") // true
 let newStrContains = newStr.contains("z") //false
 let isStrEmpty = str.isEmpty // false
 
-// Access: C
+// Access: Characters
 
 let getFirstChar = str.characters.first // "P"
 let getLastChar = str.characters.last // "g"
+
+// Modify: Delete
+
 let removeFirstChar = str.characters.popFirst() // "rogramming"
 let removeLastChar = str.characters.popLast() // "rogrammin"
 
