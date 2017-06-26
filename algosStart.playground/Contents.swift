@@ -51,6 +51,15 @@ let strContains = str.contains("gram") // true
 let newStrContains = newStr.contains("z") //false
 let isStrEmpty = str.isEmpty // false
 
+// Access: C
+
+let getFirstChar = str.characters.first // "P"
+let getLastChar = str.characters.last // "g"
+let removeFirstChar = str.characters.popFirst() // "rogramming"
+let removeLastChar = str.characters.popLast() // "rogrammin"
+
+
+
 
 
 // Iterating
