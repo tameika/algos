@@ -23,9 +23,9 @@ var str = "Programming"
 
 // Modify: extend
 
-let newStr = str + " swift" // "Programming swift"
-let newerStr = str.appending(" fun")
-let insertStr = str
+str += " swift" // "Programming swift"
+let appendStr = str.appending(" fun")
+
 
 var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
 let arrBackToStr = String(strToArr) // "Programming"
@@ -33,23 +33,24 @@ let arrBackToStr = String(strToArr) // "Programming"
 
 // Modify: style
 
-let strUppercased = newStr.uppercased() // "PROGRAMMING SWIFT"
-let strLowercased = newStr.lowercased() // "programming swift"
-let strFirstLettersCap = newStr.capitalized // "Programming Swift"
+let strUppercased = str.uppercased() // "PROGRAMMING SWIFT"
+let strLowercased = str.lowercased() // "programming swift"
+let strFirstLettersCap = str.capitalized // "Programming Swift"
+let replaceStr = str.replacingOccurrences(of: "swift", with: "java")
+
 
 
 // Access: numerical value
 
-let strCharCount = str.characters.count // 11
+let strCharCount = str.characters.count // 17
 let strStartIndex = str.characters.startIndex // 0
-let strEndIndex = str.endIndex // 11
-let newStrStartIndex = newStr.endIndex // 17
+let strEndIndex = str.endIndex // 17
+let strIndicesDistance = str.characters.distance(from: str.characters.startIndex, to: str.characters.endIndex) // 17
 
 
 // Access: boolean value
 
-let strContains = str.contains("gram") // true
-let newStrContains = newStr.contains("z") //false
+let strContains = str.contains("z") // false
 let isStrEmpty = str.isEmpty // false
 
 // Access: Characters
@@ -61,6 +62,7 @@ let getLastChar = str.characters.last // "g"
 
 let removeFirstChar = str.characters.popFirst() // "rogramming"
 let removeLastChar = str.characters.popLast() // "rogrammin"
+
 
 
 
@@ -100,10 +102,6 @@ for i in str.characters.enumerated() {
 //(8, "i")
 //(9, "n")
 //(10, "g")
-
-
-
-
 
 
 
