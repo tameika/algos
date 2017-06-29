@@ -61,8 +61,10 @@ let getLastChar = str.characters.last // "g"
 
 // Modify: Delete
 
-let removeFirstChar = str.characters.popFirst() // "rogramming"
-let removeLastChar = str.characters.popLast() // "rogrammin"
+let popFirstChar = str.characters.popFirst() // "rogramming swift"
+let popLastChar = str.characters.popLast() // "rogramming swif"
+let removeFirstChar = str.characters.removeFirst() // "ogramming swif"
+let removeLastChar = str.characters.removeLast() // "ogramming swi"
 
 
 
