@@ -45,6 +45,7 @@ let replaceStr = str.replacingOccurrences(of: "swift", with: "java")
 let strCharCount = str.characters.count // 17
 let strStartIndex = str.characters.startIndex // 0
 let strEndIndex = str.endIndex // 17
+let indexOfStr = str.characters.index(of: "m") // 6
 let strIndicesDistance = str.characters.distance(from: str.characters.startIndex, to: str.characters.endIndex) // 17
 
 
@@ -62,7 +63,6 @@ let getLastChar = str.characters.last // "g"
 
 let removeFirstChar = str.characters.popFirst() // "rogramming"
 let removeLastChar = str.characters.popLast() // "rogrammin"
-
 
 
 
