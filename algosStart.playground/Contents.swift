@@ -24,8 +24,9 @@ var str = "Programming"
 // Modify: extend
 
 str += " swift" // "Programming swift"
-var appendStr = str.appending(" fun")
+var appendStr = str.appending(" fun") // "Programming swift fun"
 appendStr.insert("!", at: appendStr.endIndex) // "Programming swift fun!"
+appendStr.insert("?", at: appendStr.characters.index(of: "!")!) // "Prgoramming swift fun?!"
 
 
 var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
