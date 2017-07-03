@@ -3,10 +3,12 @@
 import UIKit
 
 
-// MARK : DATA STRUCTURE : STRING
 
 
-/* MARK : Notes
+
+/* MARK : DATA STRUCTURE -> STRING
+ 
+ Notes
  
  - A String is a series of Characters
  - Predefined string values are called String Literals
@@ -18,8 +20,8 @@ import UIKit
 
 // Create
 
-
 var str = "Programming"
+
 
 // Modify: extend
 
@@ -28,12 +30,15 @@ var appendStr = str.appending(" fun") // "Programming swift fun"
 appendStr.insert("!", at: appendStr.endIndex) // "Programming swift fun!"
 appendStr.insert("?", at: appendStr.characters.index(of: "!")!) // "Prgoramming swift fun?!"
 
+let offsetIndex = str.index(str.startIndex, offsetBy: 11)
+str.insert("-", at: offsetIndex)
 
-var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
-let arrBackToStr = String(strToArr) // "Programming"
 
 
 // Modify: style
+
+var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
+let arrBackToStr = String(strToArr) // "Programming"
 
 let strUppercased = str.uppercased() // "PROGRAMMING SWIFT"
 let strLowercased = str.lowercased() // "programming swift"
@@ -51,15 +56,18 @@ let indexOfStr = str.characters.index(of: "m") // 6
 let strIndicesDistance = str.characters.distance(from: str.characters.startIndex, to: str.characters.endIndex) // 17
 
 
+
 // Access: boolean value
 
 let strContains = str.contains("z") // false
 let isStrEmpty = str.isEmpty // false
 
+
 // Access: Characters
 
 let getFirstChar = str.characters.first // "P"
 let getLastChar = str.characters.last // "g"
+
 
 // Modify: Delete
 
@@ -70,7 +78,7 @@ let removeLastChar = str.characters.removeLast() // "ogramming swi"
 let removeIndex = str.characters.remove(at: str.characters.index(of: "i")!) // "i"
 
 
-//insert, offset, split, seperated by,
+// split, seperated by, range, substring,
 
 
 
