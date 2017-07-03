@@ -24,7 +24,8 @@ var str = "Programming"
 // Modify: extend
 
 str += " swift" // "Programming swift"
-let appendStr = str.appending(" fun")
+var appendStr = str.appending(" fun")
+appendStr.insert("!", at: appendStr.endIndex) // "Programming swift fun!"
 
 
 var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
@@ -68,6 +69,7 @@ let removeLastChar = str.characters.removeLast() // "ogramming swi"
 let removeIndex = str.characters.remove(at: str.characters.index(of: "i")!) // "i"
 
 
+//insert, offset, split, seperated by,
 
 
 
@@ -105,6 +107,7 @@ for i in str.characters.enumerated() {
 //(8, "i")
 //(9, "n")
 //(10, "g")
+
 
 
 
