@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-
+import Foundation
 
 
 
@@ -71,51 +71,64 @@ let getLastChar = str.characters.last // "g"
 
 // Modify: Delete
 
-let popFirstChar = str.characters.popFirst() // "rogramming swift"
-let popLastChar = str.characters.popLast() // "rogramming swif"
-let removeFirstChar = str.characters.removeFirst() // "ogramming swif"
-let removeLastChar = str.characters.removeLast() // "ogramming swi"
-let removeIndex = str.characters.remove(at: str.characters.index(of: "i")!) // "i"
+str = "hello world"
+
+let popFirstChar = str.characters.popFirst() // "h" -> "ello world"
+let popLastChar = str.characters.popLast() // "d" -> "ello worl"
+
+str = "goodbye summer"
+
+let removeFirstChar = str.characters.removeFirst() // "g" -> "oodbye summer"
+let removeLastChar = str.characters.removeLast() // "r" -> "oodbye summe"
+
+var name = "Alice"
+
+let removeIndex = name.characters.remove(at: name.characters.index(of: "i")!) // "i" -> "Alce"
 
 
-// split, seperated by, range, substring,
+
+
+let splitString = "New York".components(separatedBy: " ") // ["New", "York"]
+
+
+
+
+// split, range, substring,
 
 
 
 // Iterating
 
-
-for i in str.characters {
+var force = "Use the force"
+for i in force.characters {
     print(i)
 }
 
-//P
-//r
+//U
+//s
+//e
+
+//t
+//h
+//e
+
+//f
 //o
-//g
 //r
-//a
-//m
-//m
-//i
-//n
-//g
+//c
+//e
 
-for i in str.characters.enumerated() {
+force = "force"
+for i in force.characters.enumerated() {
     print(i)
 }
 
-//(0, "P")
-//(1, "r")
-//(2, "o")
-//(3, "g")
-//(4, "r")
-//(5, "a")
-//(6, "m")
-//(7, "m")
-//(8, "i")
-//(9, "n")
-//(10, "g")
+//(0, "f")
+//(1, "o")
+//(2, "r")
+//(3, "c")
+//(4, "e")
+
 
 
 
