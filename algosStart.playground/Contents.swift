@@ -1,8 +1,7 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
-import Foundation
 
+import Foundation
 
 
 
@@ -14,8 +13,7 @@ import Foundation
  - Predefined string values are called String Literals
  - A String is a value type so it is unique copy when passed (and so does not point back to its origin)
  - A string does not conform to type sequence or protocol sequence (and so cannot be interated over in its regular state)
- 
- */
+  */
 
 
 // Create
@@ -89,12 +87,10 @@ var ios = "swift and objective-c"
 let toSubstring = ios.substring(from: ios.characters.startIndex).substring(to: ios.characters.index(of: "e")!) // "swift and obj"
 
 
-
 // Modify : To Array
 
 let separatedString = "New York".components(separatedBy: " ") // ["New", "York"]
 let splitString = "Happy Birthday".characters.split(separator: " ").flatMap(String.init) // ["Happy", "Birthday"]
-
 
 
 // Iterating
@@ -117,6 +113,7 @@ for i in force.characters {
 //r
 //c
 //e
+
 
 force = "force"
 for i in force.characters.enumerated() {
