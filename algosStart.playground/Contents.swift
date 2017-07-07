@@ -88,12 +88,15 @@ let removeIndex = name.characters.remove(at: name.characters.index(of: "i")!) //
 
 
 
-let splitString = "New York".components(separatedBy: " ") // ["New", "York"]
+let separatedString = "New York".components(separatedBy: " ") // ["New", "York"]
+let splitString = "Happy Birthday".characters.split(separator: " ").flatMap(String.init)
 
+var group = "girls and boys"
 
+group.substring(from: group.characters.startIndex).substring(to: group.characters.index(of: "d")!)
+group.substring(to: group.characters.endIndex).substring(from: group.characters.index(of: "s")!)
 
-
-// split, range, substring,
+//  range
 
 
 
