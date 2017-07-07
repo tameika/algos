@@ -35,9 +35,6 @@ str.insert("-", at: offsetIndex)
 
 // Modify : style
 
-var strToArr = Array(str.characters) // ["P", "r", "o", "g", "r", "a", "m", "m", "i", "n", "g"]
-let arrBackToStr = String(strToArr) // "Programming"
-
 let strUppercased = str.uppercased() // "PROGRAMMING SWIFT"
 let strLowercased = str.lowercased() // "programming swift"
 let strFirstLettersCap = str.capitalized // "Programming Swift"
@@ -50,12 +47,15 @@ let replaceStr = str.replacingOccurrences(of: "swift", with: "java")
 str = "swift developer"
 
 let strCharCount = str.characters.count // 15
+
 let strStartIndex = str.characters.startIndex // 0
 let strEndIndex = str.endIndex // 15
 let indexOfStr = str.characters.index(of: "v") // 8
 let strIndicesDistance = str.characters.distance(from: str.characters.index(of: "s")!, to: str.characters.index(of: "t")!) // 4
+
 let lowerbound = str.range(of: "wif")?.lowerBound // 1
 let upperbound = str.range(of: "wif")?.upperBound // 4
+
 
 
 // Access : boolean value
@@ -64,10 +64,12 @@ let strContains = str.contains("z") // false
 let isStrEmpty = str.isEmpty // false
 
 
+
 // Access : Characters
 
-let getFirstChar = str.characters.first // "P"
-let getLastChar = str.characters.last // "g"
+let getFirstChar = str.characters.first // "s"
+let getLastChar = str.characters.last // "r"
+
 
 
 // Modify : Delete
@@ -87,10 +89,16 @@ var ios = "swift and objective-c"
 let toSubstring = ios.substring(from: ios.characters.startIndex).substring(to: ios.characters.index(of: "e")!) // "swift and obj"
 
 
+
 // Modify : To Array
+
+var device = "computer"
+var strToArr = Array(device.characters) // ["c", "o", "m", "p", "u", "t", "e", "r"]
+let arrToStr = String(strToArr) // "computer"
 
 let separatedString = "New York".components(separatedBy: " ") // ["New", "York"]
 let splitString = "Happy Birthday".characters.split(separator: " ").flatMap(String.init) // ["Happy", "Birthday"]
+
 
 
 // Iterating
