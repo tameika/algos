@@ -33,3 +33,12 @@ let arr3 = arr + arr2 // [5, 6, 0, 4, 2, 9, 3, 1]
 // Access : Numerical Values 
 
 arr3.count // 8
+
+let arrEndIndex = arr3.endIndex // 8
+
+let arrStartIndex = arr3.startIndex // 0
+
+
+
+
+
