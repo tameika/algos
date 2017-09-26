@@ -30,20 +30,37 @@ arr.append(contentsOf: [5, 6, 0, 4, 2]) // arr -> [5, 6, 0, 4, 2]
 var arr3 = arr + arr2 // [5, 6, 0, 4, 2, 9, 3, 1]
 
 
-// Modifty: Delete
+// Modifty : Delete
 
-var groceryList = ["rice", "milk", "oil", "chicken", "lemons"]
+var groceryList = ["rice", "milk", "oil", "chicken", "lemons", "salt"]
 
-let popLast = groceryList.popLast() // "lemons" -> ["rice", "milk", "oil", "chicken"]
+let popLast = groceryList.popLast() // "salt" -> ["rice", "milk", "oil", "chicken", "lemons"]
 
-let drop = arr3.dropFirst(2)
-print(drop)
+let removeFirst = groceryList.removeFirst() // "rice" -> ["milk", "oil", "chicken", "lemons"]
 
-let removeFirst = groceryList.removeFirst() // "rice" -> ["milk", "oil", "chicken"]
-
-let removeLast = groceryList.removeLast() // "chicken" -> ["milk", "oil",]
+let removeLast = groceryList.removeLast() // "lemons" -> ["milk", "oil", "chicken"]
 
 
+var planets = ["earth", "mars", "venus", "mercury", "saturn", "jupiter"]
+
+let dropFirst = planets.dropFirst(2) // "earth", "mars" -> ["venus", "mercury", "saturn", "jupiter"]
+
+let dropLast = planets.dropLast(2) // "saturn", "jupiter" -> ["earth", "mars", "venus", "mercury"]
+
+
+// Modify : Organize
+
+let sortedPlanets = planets.sorted() // ["earth", "jupiter", "mars", "mercury", "saturn", "venus"]
+
+var scores = [98, 100, 88, 92, 76]
+
+let sortedScores = scores.sorted() // [76, 88, 92, 98, 100]
+
+let reversedScores = scores.reversed()
+
+
+
+// reversed, sorted, joined
 
 // Access : Numerical Values 
 
