@@ -62,7 +62,7 @@ let reversedScores = scores.reversed()
 
 // reversed, sorted, joined
 
-// Access : Numerical Values 
+// Access : Elemnts 
 
 arr3.count // 8
 
@@ -72,7 +72,9 @@ let arrStartIndex = arr3.startIndex // 0
 
 let arrDistance = arr3.distance(from: 2, to: 5) // 3
 
+let a = groceryList.first // milk
 
+let b = groceryList.last // chicken
 
 
 
