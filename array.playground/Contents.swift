@@ -56,22 +56,30 @@ var scores = [98, 100, 88, 92, 76]
 
 let sortedScores = scores.sorted() // [76, 88, 92, 98, 100]
 
-/* Note on reversing an array -
+
+
+/* On reversing an array -
  
  Calling .reversered() on an array returns 'ReverseRandomAccessCollection'.
  It presents the elements of the original array in reverse order, without
- creating a new array and copying all elements.
- 
- 
- */
+ creating a new array and copying all elements. But it doesn not show array. */
 
-let reversedScores = Array(scores.reversed())
+var reversedScores = scores.reversed() // ReversedRandomAccessCollection<Array<Int>>
+
+/* To show the resulting array of .reversed() cast it as an array  */
+
+var reversedScoresAsArray = Array(scores.reversed()) // [76, 92, 88, 100, 98]
+
+/* Access the reversed elements with subscripts or a for-in loop */
+
+let accessReversedArrayElement = reversedScoresAsArray[2] // 88
 
 
 
-// reversed, sorted, joined
 
-// Access : Elemnts 
+// sorted, joined
+
+// Access : Elements
 
 arr3.count // 8
 
