@@ -23,11 +23,13 @@ var arr = [Int]() // []
 var arr2 = [9, 3, 1]
 
 
+
 // Modify : Add
 
 arr.append(contentsOf: [5, 6, 0, 4, 2]) // arr -> [5, 6, 0, 4, 2]
 
 var arr3 = arr + arr2 // [5, 6, 0, 4, 2, 9, 3, 1]
+
 
 
 // Modify : Delete
@@ -48,7 +50,13 @@ let dropFirst = planets.dropFirst(2) // "earth", "mars" -> ["venus", "mercury", 
 let dropLast = planets.dropLast(2) // "saturn", "jupiter" -> ["earth", "mars", "venus", "mercury"]
 
 
-// Modify : Organize
+
+
+/* Modify : Sort
+ 
+ .sort() vs .sorted() - SORT mutates the array it is called on so its items
+ are sorted. SORTED returns a copy of the array it is called on with the
+ values sorted. The sorted func duplicates each value and doubles memory usage. */
 
 let sortedPlanets = planets.sorted() // ["earth", "jupiter", "mars", "mercury", "saturn", "venus"]
 
@@ -58,7 +66,8 @@ let sortedScores = scores.sorted() // [76, 88, 92, 98, 100]
 
 
 
-/* On reversing an array -
+
+/* Modify : Reverse
  
  Calling .reversered() on an array returns 'ReverseRandomAccessCollection'.
  It presents the elements of the original array in reverse order, without
