@@ -30,7 +30,7 @@ arr.append(contentsOf: [5, 6, 0, 4, 2]) // arr -> [5, 6, 0, 4, 2]
 var arr3 = arr + arr2 // [5, 6, 0, 4, 2, 9, 3, 1]
 
 
-// Modifty : Delete
+// Modify : Delete
 
 var groceryList = ["rice", "milk", "oil", "chicken", "lemons", "salt"]
 
@@ -56,7 +56,16 @@ var scores = [98, 100, 88, 92, 76]
 
 let sortedScores = scores.sorted() // [76, 88, 92, 98, 100]
 
-let reversedScores = scores.reversed()
+/* Note on reversing an array -
+ 
+ Calling .reversered() on an array returns 'ReverseRandomAccessCollection'.
+ It presents the elements of the original array in reverse order, without
+ creating a new array and copying all elements.
+ 
+ 
+ */
+
+let reversedScores = Array(scores.reversed())
 
 
 
