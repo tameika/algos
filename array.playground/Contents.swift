@@ -84,6 +84,13 @@ var reversedScoresAsArray = Array(scores.reversed()) // [76, 92, 88, 100, 98]
 let accessReversedArrayElement = reversedScoresAsArray[2] // 88
 
 
+var ages = [19, 31, 27, 42, 23, 11]
+
+
+let isContained = ages.contains(19) // true
+
+
+
 
 
 // sorted, joined
