@@ -1,1 +1,1 @@
-# algos
+# data structures 
