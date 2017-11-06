@@ -84,30 +84,38 @@ var reversedScoresAsArray = Array(scores.reversed()) // [76, 92, 88, 100, 98]
 let accessReversedArrayElement = reversedScoresAsArray[2] // 88
 
 
-var ages = [19, 31, 27, 42, 23, 11]
 
+// Acess : Bools
+
+var ages = [19, 31, 27, 42, 23, 11]
 
 let isContained = ages.contains(19) // true
 
+let test = ages.min()
 
 
 
 
-// sorted, joined
 
-// Access : Elements
+//  joined
 
-arr3.count // 8
+// Access
 
-let arrEndIndex = arr3.endIndex // 8
+let colors = ["blue", "gray", "black", "white", "tan"]
 
-let arrStartIndex = arr3.startIndex // 0
+let countColors = colors.count // 5
 
-let arrDistance = arr3.distance(from: 2, to: 5) // 3
+let colorsStartIndex = colors.startIndex // 0
 
-let a = groceryList.first // milk
+let colorsEndIndex = colors.endIndex // 5
 
-let b = groceryList.last // chicken
+let colorsDistance = colors.distance(from: 2, to: 5) // 3
+
+let firstColor = colors.first // blue
+
+let lastColor = colors.last // tan
+
+
 
 
 
